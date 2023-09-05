@@ -1,6 +1,6 @@
 #### For Few Days Only
 
-To facilitate testing of the code API, a temporary URL has been provided: https://0b18-35-239-173-124.ngrok-free.app/ This URL grants access to the code API for a limited duration. You can utilize this resource to test and evaluate the functionality and performance of the code API. Please note that the URL is subject to change or expire in the future.
+Its running on Google vertex AI To facilitate testing of the code API, a temporary URL has been provided: https://0b18-35-239-173-124.ngrok-free.app/ This URL grants access to the code API for a limited duration. You can utilize this resource to test and evaluate the functionality and performance of the code API. Please note that the URL is subject to change or expire in the future.
 
 #### Readme.md
 
@@ -65,11 +65,13 @@ This repository contains code for a FastAPI application that handles user authen
 
 ### Usage
 
+1. Run the create_tables file first so there is no error of tables.
+
 1. Sign up a new user by sending a POST request to `/signup` with a JSON body containing the `username` and `password`.
 
-2. Log in with the created user by sending a POST request to `/login` with a JSON body containing the `username` and `password`. The response will include an access token.
+1. Log in with the created user by sending a POST request to `/login` with a JSON body containing the `username` and `password`. The response will include an access token.
 
-3. Use the access token to upload an image file by sending a POST request to `/uploadfile` with the image file as the request body. Make sure to include the access token in the authorization header as a bearer token.
+1. Use the access token to upload an image file by sending a POST request to `/uploadfile` with the image file as the request body. Make sure to include the access token in the authorization header as a bearer token.
 
 ### Example
 
