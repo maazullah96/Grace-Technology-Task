@@ -2,7 +2,13 @@
 
 This repository contains code for a FastAPI application that handles user authentication and image upload. The application allows users to sign up, login, and upload image files. It includes authentication using JWT (JSON Web Tokens) and stores user information in a SQLite database.
 
+### PreqRequisties
+
+- CUDA 11.8
+- CUDNN
+
 ### Requirements
+
 - Python 3.9 or higher
 - FastAPI
 - SQLAlchemy
@@ -12,22 +18,26 @@ This repository contains code for a FastAPI application that handles user authen
 - Pydantic
 - Torch
 - Diffusers
+- HuggingFace
 - Requests
 - Pillow
 
 ### Installation
 
 1. Clone the repository:
+
    ```
    git clone https://github.com/maazullah96/Grace-Technology-Task.git
    ```
 
 2. Change into the project directory:
+
    ```
    cd Grace-Technology-Task
    ```
 
 3. Install the required dependencies:
+
    ```
    pip install -r requirements.txt
    ```
@@ -58,11 +68,13 @@ This repository contains code for a FastAPI application that handles user authen
 Here's an example on how to use the API endpoints using `curl`:
 
 1. Sign up:
+
    ```
    curl -X POST -H "Content-Type: application/json" -d '{"username":"your_username", "password":"your_password"}' http://localhost:8000/signup
    ```
 
 2. Log in:
+
    ```
    curl -X POST -H "Content-Type: application/json" -d '{"username":"your_username", "password":"your_password"}' http://localhost:8000/login
    ```
@@ -85,4 +97,3 @@ Note: Replace `<access_token>` with the actual access token obtained from the lo
 - The application uses a SQLite database to store user information. You can change the database URL in the code if needed.
 
 - This readme file is a general guide to help you understand the code and its usage. Feel free to modify it as per your project requirements.
-
