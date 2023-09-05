@@ -47,6 +47,10 @@ This repository contains code for a FastAPI application that handles user authen
    uvicorn main:app --reload
    ```
 
+### Models Used
+
+- https://huggingface.co/stabilityai/stable-diffusion-2-depth
+
 ### API Endpoints
 
 - `POST /signup`: Creates a new user. Requires a JSON body with `username` and `password` fields. Returns the created user's username.
@@ -97,3 +101,14 @@ Note: Replace `<access_token>` with the actual access token obtained from the lo
 - The application uses a SQLite database to store user information. You can change the database URL in the code if needed.
 
 - This readme file is a general guide to help you understand the code and its usage. Feel free to modify it as per your project requirements.
+
+### Results
+
+- Prompt Used
+
+```
+Generate a high-resolution image that faithfully represents the iconic characters from the movie 'Avatar'. Pay special attention to the unique facial features, including the expressive eyes and high cheekbones of the Na'vi race. Capture the intricate details of the blue skin, including tone, texture, and the glow of bioluminescent markings. Create a visually stunning and lifelike representation that showcases the flowing, braided hair and tribal-inspired clothing and accessories of the Na'vi characters.
+
+```
+
+![Result](results/download_final.png)
