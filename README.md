@@ -1,3 +1,7 @@
+#### For Few Days Only
+
+To facilitate testing of the code API, a temporary URL has been provided: https://0b18-35-239-173-124.ngrok-free.app/ This URL grants access to the code API for a limited duration. You can utilize this resource to test and evaluate the functionality and performance of the code API. Please note that the URL is subject to change or expire in the future.
+
 #### Readme.md
 
 This repository contains code for a FastAPI application that handles user authentication and image upload. The application allows users to sign up, login, and upload image files. It includes authentication using JWT (JSON Web Tokens) and stores user information in a SQLite database.
